@@ -7,7 +7,7 @@ from django.db import migrations
 
 def add_player(apps, schema_editor):
     Player = apps.get_model("team", "Player")
-    with open('/users/hrumba/week4/day2/django2/barcelona/squad.csv') as f:
+    with open('squad.csv') as f:
         reader = csv.reader(f, delimiter=',')
         print(reader)
         for i in reader:
